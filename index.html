@@ -1,0 +1,235 @@
+<!-- Ini adalah contoh halaman index.html Hoop Studio yang sudah diisi -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoop Studio</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <script src="js/JS.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/PlayVideo.js"></script>
+</head>
+<body>
+
+
+  <!-- Header -->
+  <div class="header_section transparent-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container d-flex justify-content-between align-items-center w-100">
+        
+        <!-- Logo -->
+        <div class="navbar-brand logo">
+          <a href="index.html">
+            <img src="images/Logo/Logo HOOP.png" alt="Hoop Studio">
+          </a>
+        </div>
+
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+
+
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Main</a></li>
+            <li class="nav-item"><a class="nav-link" href="OurGame.html">Our Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="OurTeam.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="OurPorto.html">Game Art Portfolio</a></li>
+            <li class="nav-item lang-select-mobile d-lg-none">
+              <a class="nav-link" href="#">ENG ▾</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Language Selector tetap di luar untuk layar besar -->
+        <div class="lang-select d-none d-lg-block">
+          <a href="#">ENG ▾</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+    
+
+  <!-- Banner -->
+  <div class="banner_section hero-banner layout_padding">
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+      <h1 class="hero-title">WE ARE HOOP STUDIO</h1>
+      <p class="hero-subtitle">MAKING GAME WITH HOOP</p>
+     <button class="hero-btn" onclick="playVideo(this)" data-video-id="IePMuJMEnwo">Video Profile</button>
+    </div>
+  </div>
+ 
+  <!-- Modal Video Popup -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-video-wrapper">
+        <!-- iframe disisipkan lewat JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="about_section layout_padding dark-about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Kiri: Teks -->
+        <div class="col-md-6 text-white align-up">
+          <p class="section-label">WHO ARE WE?</p>
+          <h1 class="section-title">WHAT IS HOOP STUDIO</h1>
+          <hr class="underline">
+          <p class="about-desc">
+            Hoop Studio is a creative team primarily focused on game development with a strong portfolio of games, some of which have won national awards.
+          </p>
+          <p class="about-desc">
+            At Hoop Studio, we blend technical expertise with creativity, aiming to bring <span class="highlight">innovative concepts</span> to life across multiple digital platforms.
+          </p>
+        </div>
+  
+        <!-- Kanan: Logo besar -->
+        <div class="col-md-6 text-center">
+          <img src="images/Logo/Logo.png" alt="Hoop Studio Logo" class="about-logo">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Visi Mision Highlight -->
+  <div class="vision_mission_section layout_padding">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Kiri: Background dengan fade -->
+        <div class="col-md-6 position-relative p-0">
+          <div class="vision-fade-bg"></div>
+        </div>
+  
+        <!-- Kanan: Konten -->
+        <div class="col-md-6 p-5 text-white">
+          <p class="section-label-vision-fade">THIS IS OUR</p>
+          <h1 class="section-title-vision-fade no-bg">VISION & MISSION</h1>
+        
+          <div class="vm-content">
+            <div class="vm-line">
+              <div>
+                <h4 class="vm-heading">VISION</h4>
+                <p class="vm-text">
+                  Membuat game dengan harapan, baik dalam apa yang dikandungnya maupun bagaimana mempersembahkannya
+                </p>
+              </div>
+            </div>
+        
+            <div class="vm-line">
+
+              <div>
+                <h4 class="vm-heading">MISSION</h4>
+                <p class="vm-text">
+                  1. Komitmen dalam membuat game yang mampu bersaing di tengah pasar internasional<br>
+                  2. Sepenuh Hati dalam membuat game dengan energi dan pesan yang mampu dikembangkan melalui ekosistem komunitas yang aktif<br>
+                  3. Yakin dalam membuat game yang dapat dibanggakan, oleh Hoop itu sendiri, pemain, hingga Indonesia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+    
+  <!-- Member -->
+  <div class="ceo_section">
+    <div class="container text-center">
+      <p class="section-label-ceo_section">THIS IS OUR</p>
+      <h1 class="section-title-ceo_section">CHIEF EXECUTIVE OFFICER</h1>
+  
+      <!-- Gambar CEO -->
+        <div class="ceo-photos">
+          <picture>
+            <!-- Gambar alternatif untuk resolusi kecil -->
+            <source srcset="images/Member/IrhazSendiri.png" media="(max-width: 1366px)">
+            
+            <!-- Default gambar -->
+            <img src="images/Member/Full Irhaz.png" alt="CEO">
+          </picture>
+        </div>
+
+
+  
+      <!-- Tombol -->
+      <a href="OurStaff.html" class="staff-button">
+        <span class="staff-label">ANOTHER STAFF</span><br>
+        <img src="images/Acc/scroll down Staff.svg" width="24" height="24" class="staff-icon" alt="scroll icon">
+      </a>
+
+    </div>
+  </div>
+  
+  
+  <!-- Form -->
+  <div class="Contact-container">
+    <div class="Contact-content">
+      <p class="pre-title">WANT TO WORK WITH US?</p>
+      <h1 class="title">USE OUR SERVICE</h1>
+      <p class="description">
+        If you're interested in hiring us for your project, feel free to reach out via email, phone number, or through Fiverr. We'll be happy to discuss how we can collaborate with you!
+      </p>
+        <form action="https://formspree.io/f/mnnvypzz" method="POST" class="contact-form">
+          <input type="email" name="email" placeholder="Your email address" required />
+
+          <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+
+          <div class="form-footer">
+            <div id="wordCount">Words: 0 / 250</div>
+            <button type="submit" id="submitBtn">Contact Us Now</button>
+          </div>
+        </form>
+    </div>
+  </div>
+
+  
+  <footer class="site-footer">
+    <div class="footer-top">
+      <nav class="footer-nav">
+        <a href="index.html">MAIN</a>
+        <a href="OurGame.html">OUR GAMES</a>
+        <a href="OurTeam.html">TEAM</a>
+        <a href="OurPorto">GAME ART PORTFOLIO</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/hoopstudioidn"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@HoopStudioIDN"><i class="fab fa-youtube"></i></a>
+        <a href="www.linkedin.com/in/hoop-studio-82a59b350"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+      <div class="footer-copy">All Rights Reserved @hoopstudioidn</div>
+      <div class="footer-links">
+        <a href="#">PRIVACY POLICY</a> |
+        <a href="#">TERMS OF SERVICES</a> |
+        <a href="#">CODE OF CONDUCT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</body>
+</html>
